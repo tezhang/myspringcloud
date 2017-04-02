@@ -51,16 +51,21 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
-
+        <!-- springcloud config -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-config-server</artifactId>
         </dependency>
-        
-         <dependency>
+        <!-- springcloud config bus kafka -->
+       <!-- <dependency>
 		    <groupId>org.springframework.cloud</groupId>
 		    <artifactId>spring-cloud-starter-bus-kafka</artifactId>
-		</dependency>
+		</dependency> -->
+		<!-- eureka 服务注册与发现 -->		
+		<dependency>
+	        <groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-eureka-server</artifactId>
+	    </dependency>
     
   </dependencies>
   <build>
@@ -70,7 +75,7 @@
                <artifactId>spring-boot-maven-plugin</artifactId>
            </plugin>
 	</plugins>
-</build>
+  </build>
 </project>
 
 

@@ -2,7 +2,7 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.derek.springDemo</groupId>
-  <artifactId>spring-cloud-client</artifactId>
+  <artifactId>spring-cloud-client2</artifactId>
   <packaging>war</packaging>
   <version>0.0.1-SNAPSHOT</version>
   <name>spring-cloud-client Maven Webapp</name>
@@ -55,10 +55,15 @@
             <scope>test</scope>
         </dependency>
         <!-- 集成spring cloud bus kafka -->
-        <dependency>
+        <!-- <dependency>
 		    <groupId>org.springframework.cloud</groupId>
 		    <artifactId>spring-cloud-starter-bus-kafka</artifactId>
-		</dependency>      
+		</dependency>   -->  
+		<!-- springcloud eureka -->  
+		<dependency>
+	        <groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-eureka</artifactId>
+	    </dependency>
   </dependencies>
   
   <pluginRepositories>
